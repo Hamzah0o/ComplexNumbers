@@ -1,0 +1,77 @@
+1- Brief introduction about the problem :
+The company has received an order from a customer that request to develop a Complex number class using C++. The class should integrate with other code to form a comprehensive mathematical application.
+
+2- The outlines about complex numbers:
+A complex number has a representation in a plane.
+Simply take an x-axis and an y-axis (orthonormal) and give the complex number a + bi the representation-point P with coordinates (a,b).
+The point P is the image-point of the complex number (a,b).
+If you’ve ever had to do square roots you’ve probably come up against the problem of taking the square root of a negative number.  If you restrict your attention only to real numbers (0,1, -17,  , √2, …, any number you can think of), then there’s no way to take the square root of a negative.  But this makes taking square root, cube roots, and so on, a pain.
+You have to remember:
+ 1) The square root, forth root, sixth root, of a positive number has two answers (positive and negative).  
+2) The square root, forth root, sixth root,of a negative number has no answers. 
+ 3) The cube root, fifth root, seventh root, … of any number has one answer (with the same sign as the original number).  These are random, frustrating, difficult-to-remember rules.  Mathematicians had to deal with these all the time before the 1700’s.
+Then Euler happened.  He was looking at a similar problem; finding the roots of polynomials.  Similar, because the question “ , what is x?”, is exactly the same as “x2+1=0, what is x?”.  He was annoyed that most polynomials have roots that don’t exist, so he said; “Sure…  But, what if the root did exist.  Like… in an imaginary sense…”.
+That’s paraphrasing, but it’s pretty accurate.  He just declared that there’s a new number called “i” with the property that “i2 = -1″.
+So, to actually answer: Complex numbers make it easy to take roots, and using complex numbers, all polynomials with terms up to xN have N roots.
+These two properties help complex numbers “complete” the real numbers.  That is to say; you don’t need to create “super complex numbers” to fix any problems with complex numbers.  One of the first “problems” that people ask about is; “Sure,  , but what’s  ?”  Well,  .
+
+
+
+
+
+
+3-Expalnation of the class and how it works:
+This project invokes the usage of an essential feature of object oriented programing (OOP), this feature is called “class”. In this instance, a class of complex is crated to receive data or elements of a complex number, then the object from the previously mentioned class, with help of a set of functions, will serve to calculate different form of the entered complex number, such as manipulation of its form to different instances, Euler or polar. The previous process will involve computing many parameters such as the magnitude and angle of the examined complex number. The class is defined so that the structure of the main or parent code will be generalized and inclusive to be a model for any entry while the inheriting subpart of codes will be flexible to change with each entry to generate the adequate output.
+
+
+
+
+
+
+
+
+
+-UML:
+Complex
+-	Real :double.
+-	Imag:double.
++ Complex():
++ Complex(s : double , a:double).
++ Complex(xr: double).
++ Complex(xi: double ).
++ setComplexR (R :double):void.
++ setComplexI(I :double):void.
++ getComplexR():double.
++ getComplexI():double.
++ operator+(c1:Complex): Complex.
++ operator-(c1:Complex) :Complex.
++ operator*(x:Complex): Complex.
++ operator/(x:Complex): Complex.
++ display():void.
++ displayC():void.
++ polar():void.
++ eular():void.
++ getc():double.
++ getr():double.
++ magnitude():double.
++ angle ():double.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
